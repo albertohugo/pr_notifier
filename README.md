@@ -79,15 +79,17 @@ This will create a dist folder containing the main.exe file.
 
 To ensure that config.json is available to the executable, copy it to the same folder as main.exe:
 
-1. Copy config.json to the dist folder:
+1. Copy config.json and resources folder to the dist folder:
 
 `cp config.json dist/`
+
+`cp -R resources/ dist/`
 
 Now, you can run the executable from the dist folder:
 
 ```sh
 cd dist
-./main.exe
+./pr_notifier.exe
 ```
 
 ## Configure the exe as Windows startup

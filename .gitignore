@@ -1,1 +1,4 @@
 venv/
+build/
+pr_notifier.spec
+dist/
