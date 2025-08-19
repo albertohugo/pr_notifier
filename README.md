@@ -94,17 +94,17 @@ cd dist
 
 ## Configure the exe as Windows startup
 
-To add main.exe to Windows startup, you can create a shortcut to the executable and place it in the Startup folder. Here are the steps:
+To add pr_notifier.exe to Windows startup, you can create a shortcut to the executable and place it in the Startup folder. Here are the steps:
 
 1. Press Win + R to open the Run dialog.
 2. Type shell:startup and press Enter. This will open the Startup folder.
 3. Create a shortcut to main.exe and place it in the Startup folder.
 
-Alternatively, you can use a script to automate this process. Here is a PowerShell script that creates a shortcut to main.exe in the Startup folder:
+Alternatively, you can use a script to automate this process. Here is a PowerShell script that creates a shortcut to pr_notifier.exe in the Startup folder:
 
 ```powershell
 $shortcutPath = "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup\main.lnk"
-$targetPath = "<PATH>\pr-notifier\main.exe"
+$targetPath = "<PATH>\pr-notifier\pr_notifier.exe"
 
 $WScriptShell = New-Object -ComObject WScript.Shell
 $shortcut = $WScriptShell.CreateShortcut($shortcutPath)
